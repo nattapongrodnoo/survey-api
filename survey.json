@@ -1,0 +1,100 @@
+{
+    "msg": "Get survey list success",
+    "results": {
+      "count": 411,
+      "next": "https://api.dev.acolytehealth.com/touchpoints/survey-templates/?get_page=2",
+      "previous": null,
+      "results": [
+        {
+          "id": 520,
+          "title": "Survey 1",
+          "description": "Survey description",
+          "type": "SURVEY",
+          "reference": "lpg",
+          "thumbnail": null,
+          "logo_url": null,
+          "config": [
+            {
+              "pages": [
+                {
+                  "name": "page1",
+                  "elements": [
+                    {
+                      "type": "comment",
+                      "name": "openEnded",
+                      "title": "Open ended question: Tell us more about you."
+                    }
+                  ],
+                  "answer": "",
+                  "required": false
+                },
+                {
+                  "name": "page2",
+                  "elements": [
+                    {
+                      "type": "radiogroup",
+                      "name": "yesNo",
+                      "title": "Yes/No question: Do you like pizza?",
+                      "choices": [
+                        "Yes",
+                        "No"
+                      ]
+                    }
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "page3",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "name": "multiSelect",
+                      "title": "Multi select question: Choose your favorite colors",
+                      "choices": [
+                        "Red",
+                        "Green",
+                        "Blue"
+                      ]
+                    }
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "page4",
+                  "elements": [
+                    {
+                      "type": "radiogroup",
+                      "name": "singleSelect",
+                      "title": "Single select question: Choose your gender",
+                      "choices": [
+                        "Male",
+                        "Female",
+                        "Prefer not to say"
+                      ]
+                    }
+                  ],
+                  "required": false
+                },
+                {
+                  "name": "page5",
+                  "elements": [
+                    {
+                      "type": "rating",
+                      "name": "scaleQuestion",
+                      "title": "Scale question: Rate your satisfaction from 1 to 5",
+                      "maxRateDescription": "completely satisfied",
+                      "minRateDescription": "completely dissatisfied",
+                      "rateMax": 5
+                    }
+                  ],
+                  "required": false
+                }
+              ]
+            }
+          ],
+          "created_at": "2023-11-15T20:53:39.076961Z",
+          "updated_at": "2023-11-15T20:53:39.076979Z"
+        }
+      ]
+    }
+  }
